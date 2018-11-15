@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>See ya</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles/layout.css" type="text/css">
+
+</head>
+<body>
+<div class="main row1">
+  <header id="header" class="clear">
+    <div id="hgroup">
+      <h1><a href="#">JUST</a></h1>
+      <h2>just be happy</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Help</a></li>
+        <li class="last"><a href="#">Join us</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+
+<div class="main row2">
+  <div id="container" class="clear">
+    
+    <div  style="max-width:100%">
+      <img class="mySlides" src="images/demo/2.jpg" style="width:100%">
+      <img class="mySlides" src="images/demo/3.jpg" style="width:100%">
+      <img class="mySlides" src="images/demo/1.jpg" style="width:100%">
+    </div>
+  
+    <div id="homepage">
+     
+      <section id="services" class="clear">
+        <article class="one_third">
+          <figure><img src="images/demo/4.jpg" width="290" height="180" alt="">
+            <figcaption>
+              <h2>NEse bir text</h2>
+              <p>AFTER losing them, he ran on four legs and went faster, so that I think he might have got away altogether if he had not unfortunately run into a gooseberry net, and got caught by the large buttons on his JACKET. It was a blue jacket with brass buttons, quite new.</p>
+              <footer class="more"><a href="#">Read More &raquo;</a></footer>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="one_third">
+          <figure><img src="images/demo/5.jpg" width="290" height="180" alt="">
+            <figcaption>
+              <h2>NEse bir text</h2>
+              <p>AFTER losing them, he ran on four legs and went faster, so that I think he might have got away altogether if he had not unfortunately run into a gooseberry net, and got caught by the large buttons on his JACKET. It was a blue jacket with brass buttons, quite new.</p>
+              <footer class="more"><a href="#">Read More &raquo;</a></footer>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="one_third lastbox">
+          <figure><img src="images/demo/6.jpg" width="290" height="180" alt="">
+            <figcaption>
+              <h2>NEse bir text</h2>
+              <p>AFTER losing them, he ran on four legs and went faster, so that I think he might have got away altogether if he had not unfortunately run into a gooseberry net, and got caught by the large buttons on his JACKET. It was a blue jacket with brass buttons, quite new.</p>
+              <footer class="more"><a href="#">Read More &raquo;</a></footer>
+            </figcaption>
+          </figure>
+        </article>
+      </section>
+      
+      <section id="intro" class="last clear">
+        <article>
+          <figure><video width="450" height="250" autoplay>
+                    <source src="movie.mp4" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                   </video>
+            <figcaption>
+              <h2>Nese bir 2ci dereceli header</h2>
+              <p>AFTER losing them, he ran on four legs and went faster, so that I think he might have got away altogether if he had not unfortunately run into a gooseberry net, and got caught by the large buttons on his JACKET. It was a blue jacket with brass buttons, quite new.</p>
+              <p>AFTER losing them, he ran on four legs and went faster, so that I think he might have got away altogether if he had not unfortunately run into a gooseberry net, and got caught by the large buttons on his JACKET. It was a blue jacket with brass buttons, quite new.</p>
+              <footer class="more"><a href="#">Read More &raquo;</a></footer>
+            </figcaption>
+          </figure>
+        </article>
+      </section>
+      
+    </div>
+   
+  </div>
+</div>
+
+<div class="main row3">
+  <div id="footer" class="clear">     
+    <section class="one_quarter lastbox">
+      <h2 class="title">Link Block</h2>
+      <nav>
+        <ul>
+          <li><a href="#">Lorem ipsum dolor sit</a></li>
+          <li><a href="#">Amet consectetur</a></li>
+          <li><a href="#">Praesent vel sem id</a></li>
+          <li><a href="#">Curabitur hendrerit est</a></li>
+          <li class="last"><a href="#">Sed a nulla urna</a></li>
+        </ul>
+      </nav>
+    </section>
+   
+  </div>
+</div>
+
+<div class="main row4">
+  <footer id="copyright" class="clear">
+    <p class="fl_left">Copyright &copy; 2012 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    
+  </footer>
+</div>
+<script type="text/javascript">
+  var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
